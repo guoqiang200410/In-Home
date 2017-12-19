@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link href="css/mui.min.css" rel="stylesheet" />
+	<script src="js/mui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+</head>
+
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">我的消息</h1>
+	</header>
+	
+	<div class="mui-content">
+	    <p class="dividing-line"></p>
+	    
+	    <ul class="mui-table-view news-min">
+		    <li class="mui-table-view-cell mui-media">
+		        <a href="javascript:;" id="service">
+		        	<div class=" mui-media-object mui-pull-left news-list mui-text-right">
+		        		<span class="icon iconfont icon-kefu"></span>
+		        	</div>
+		            <div class="mui-media-body">
+		            	客服
+		                <p class='mui-ellipsis'>您好，请问有什么可以帮您？</p>
+		            </div>
+		        </a>
+		    </li>
+		    
+		    <li class="mui-table-view-cell mui-media">
+		        <a href="javascript:;" id="talk_list">
+		        	<div class=" mui-media-object mui-pull-left news-list mui-text-center">
+		        		<span class="icon iconfont icon-mess"></span>
+		        	</div>
+		            <div class="mui-media-body">
+		            	我的私信
+		                <p class='mui-ellipsis'></p>
+		            </div>
+		        </a>
+		    </li>
+		</ul>
+	    
+	</div>
+	
+</body>
+<script src="js/mui.min.js"></script>
+<script type="text/javascript">
+	mui.init({
+		swipeBack: true
+	});
+	
+	mui.plusReady(function(){
+		mui("#service")[0].addEventListener("tap",function(){
+			mui.openWindow('service.html','service.html')
+		})
+		mui("#talk_list")[0].addEventListener("tap",function(){
+			mui.openWindow('talk_list.html','talk_list.html')
+		})
+	})
+</script>
+
+</html>

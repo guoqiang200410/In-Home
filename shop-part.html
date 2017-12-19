@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link href="css/mui.min.css" rel="stylesheet" />
+	<script src="js/mui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<style type="text/css">
+		.top{
+			width: 100%;
+			position: absolute;
+			z-index: 5;
+			top: 10px;
+			left: 20px;
+		}
+		.top a{
+			color: #fff;
+			background: rgba(0,0,0,.7);
+			border-radius: 50%;
+			width: 30px;
+			height: 30px;
+			display: inline-block;
+			line-height: 30px;
+			text-align: center;
+			font-size: 15px;
+		}
+		.mui-bar-tab{
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="top">
+		<a href="javaScript:;" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="font-size: 18px;position: absolute;left: 0px;"></a>
+		<a href="javaScript:;" id="gohome" class="icon iconfont icon-shouye" style="position: absolute;left: 75%;"></a>
+		<a href="javaScript:;" id="sharing" class="icon iconfont icon-fenxiang"  style="position: absolute;left: 85%;"></a>
+	</div>
+	
+	<div id="slider" class="mui-slider" >
+		
+		
+		<div class="mui-slider-group mui-slider-loop">
+		    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+		    <div class="mui-slider-item mui-slider-item-duplicate">
+		    	<a href="#">
+		    		<img src="image/shop-bar4.png">
+		    	</a>
+		    </div>
+		    <!-- 第一张 -->
+		    <div class="mui-slider-item">
+		    	<a href="#">
+		    		<img src="image/shop-bar.png">
+		    	</a>
+		    </div>
+		    <!-- 第二张 -->
+		    <div class="mui-slider-item">
+		    	<a href="#">
+		    		<img src="image/shop-bar2.png">
+		    	</a>
+		    </div>
+		    <!-- 第三张 -->
+		    <div class="mui-slider-item">
+		      <a href="#">
+		        <img src="image/shop-bar3.png">
+		      </a>
+		    </div>
+		    <!-- 第四张 -->
+		    <div class="mui-slider-item">
+		    	<a href="#">
+		    		<img src="image/shop-bar4.png">
+		    	</a>
+		    </div>
+		    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+		    <div class="mui-slider-item mui-slider-item-duplicate">
+		    	<a href="#">
+		    		<img src="image/shop-bar.png">
+		    	</a>
+		    </div>
+			</div>
+			
+			<div class="mui-slider-indicator">
+			    <div class="mui-indicator mui-active"></div>
+			    <div class="mui-indicator"></div>
+			    <div class="mui-indicator"></div>
+			    <div class="mui-indicator"></div>
+			</div>
+    </div>
+    
+    <div class="mui-content">
+       
+        <div class="mui-row" style="padding: 10px;">
+        	<div class="mui-col-xs-9">
+        		<p class="shop-title" style="font-size: 15px;color: #000;margin-bottom: 0px;">啊啊</p>
+        		<p class="miao" style="font-size: 12px;margin-bottom: 5px;">意大利知名设计 纯绒填充</p>
+        		<p class="price" style="font-size: 22px;color: #d31129;">￥2790-37390</p>
+        	</div>
+        	<div class="mui-col-xs-3" style="border-left: 1px solid #b2b4b6;">
+        		<p style="font-size: 15px;font-weight: bold;text-align: center;margin-bottom: 0px;color: #000;">43</p>
+        		<p style="font-size: 12px;color: #ff5541;text-align: center;">用户评价</p>
+        	</div>
+        </div>
+        
+        <div class="mui-row">
+			<div class="mui-col-sm-4 mui-col-xs-4">
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						品牌制造商直供
+					</a>
+				</li>
+			</div>
+			<div class="mui-col-sm-4 mui-col-xs-4">
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						七天免费退换货
+					</a>
+				</li>
+			</div>
+			<div class="mui-col-sm-4 mui-col-xs-4">
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						线下真实体验
+					</a>
+				</li>
+			</div>
+		</div>
+		
+		
+		<p class="dividing-line"></p>
+		
+		<div class="shop-mess">
+			<ul class="mui-table-view">
+			    <li class="mui-table-view-cell">
+			    	<span style="float: left;width: 2px;height: 15px;background: #000;margin-right: 10px;margin-top: 2px;"></span>
+			        <a class="mui-navigate-right" style="font-size: 13px;float: left;">商品基础信息</a>
+			    </li>
+			    <div class="mui-row" style="padding: 0px 35px;">
+			    	<p class="mui-col-xs-3" style="font-size: 13px;color: #000;margin-bottom: 3px;">
+						商品风格
+					</p>
+					<p class="mui-col-xs-9" style="font-size: 13px;color: #000;margin-bottom: 3px;">
+						现代简约
+					</p>
+			    </div>
+			    <div class="mui-row" style="padding: 0px 35px;">
+			    	<p class="mui-col-xs-3" style="font-size: 13px;color: #000;margin-bottom: 3px;">
+						面料
+					</p>
+					<p class="mui-col-xs-9" style="font-size: 13px;color: #000;margin-bottom: 3px;">
+						意大利进口全青皮/高级棉麻混纺
+					</p>
+			    </div>
+			    <div class="mui-row" style="padding: 0px 35px;">
+			    	<p class="mui-col-xs-3" style="font-size: 13px;color: #000;margin-bottom: 3px;">
+						主材
+					</p>
+					<p class="mui-col-xs-9" style="font-size: 13px;color: #000;margin-bottom: 15px;">
+						实木
+					</p>
+			    </div>
+			</ul>
+		</div>
+		
+		<p class="dividing-line"></p>
+		<div class="shop-mess-detail">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell" style="font-size: 13px;">商品详情</li>
+			    <p>
+			    	<img src="image/shop-detail1.png" style="width:95%;margin-left: 2.5%;" />
+			    	<img src="image/shop-detail2.png" style="width:95%;margin-left: 2.5%;" />
+			    	<img src="image/shop-detail3.png" style="width:95%;margin-left: 2.5%;margin-bottom: 50px;" />
+			    </p>
+			</ul>
+		</div>
+		
+		
+		
+    </div>
+    
+    <nav class="mui-bar mui-bar-tab mui-row">
+    	<div class="mui-col-xs-6 mui-row">
+    		<a href="javaScript:;" id="service" class="mui-col-xs-4" style="color: #666;">
+				<span class="icon iconfont icon-kefu"></span>
+	    		<p>家居顾问</p>
+	    	</a>
+	    	<a href="javaScript:;" class="mui-col-xs-4" style="color: #666;">
+				<span class="icon iconfont icon-shoucang"></span>
+	    		<p>收藏</p>
+	    	</a>
+	    	<a href="javaScript:;" id="trolley" class="mui-col-xs-4" style="color: #666;">
+				<span class="icon iconfont icon-gouwuche"></span>
+	    		<p>购物车</p>
+	    	</a>
+    	</div>
+		
+		<div class="mui-col-xs-6 mui-row" style="background: ;">
+			<a href="javaScript:;" class="mui-col-xs-6" style="font-size: 15px;color: #ff5541;line-height: 53px;border-left: 1px solid #ddd;">立即购买</a>
+	    	<a href="javaScript:;" class="mui-col-xs-6" style="font-size: 15px;color: #fff;line-height: 53px;background: #ff5541;">加入购物车</a>
+		</div>
+	    	
+    </nav>
+    
+	    
+	
+
+	
+	
+</body>
+<script type="text/javascript">
+	mui.init({
+		swipeBack: true
+	});
+	mui.plusReady(function(){
+		var self = plus.webview.currentWebview();
+		mui(".shop-title")[0].innerHTML = self.titles;
+		
+		
+		mui("#gohome")[0].addEventListener("tap",function(){
+			mui.openWindow('index.html','index.html')
+		})
+		mui("#sharing")[0].addEventListener("tap",function(){
+			mui.openWindow('sharing.html','sharing.html')
+		})
+		
+		mui("#service")[0].addEventListener("tap",function(){
+			mui.openWindow('service.html','service.html')
+		})
+		
+		mui("#trolley")[0].addEventListener("tap",function(){
+			mui.openWindow('trolley.html','trolley.html')
+		})
+	})
+</script>
+</html>

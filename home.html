@@ -1,0 +1,594 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link href="css/mui.min.css" rel="stylesheet" />
+	<script src="js/mui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+</head>
+
+<body>
+	<div class="mui-content">
+		
+		<header class="mui-bar mui-bar-nav position mui-row">
+			<a class="mui-pull-left mui-col-xs-2 mui-text-center"></a>
+			<div class="mui-input-row mui-search mui-col-xs-8">
+			    <input type="search" class="mui-input-clear" placeholder="搜索品牌/单品/风格">
+			</div>
+			<span class="mui-col-xs-1 icon iconfont icon-gouwuche head-icon mui-text-right" id="head_trolley"></span>
+			<span class="mui-col-xs-1 icon iconfont icon-shezhi head-icon-set mui-text-right" id="head_set"></span>
+		</header>
+		
+		
+		<div id="refreshContainer" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+
+				<div id="slider" class="mui-slider">
+					<div class="mui-slider-group mui-slider-loop">
+						<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="javaScrip:;">
+								<img src="image/banner.png">
+							</a>
+						</div>
+						<!-- 第一张 -->
+						<div class="mui-slider-item">
+							<a href="javaScrip:;">
+								<img src="image/banner.png">
+							</a>
+						</div>
+						<!-- 第二张 -->
+						<div class="mui-slider-item">
+							<a href="javaScrip:;">
+								<img src="image/banner-2.png">
+							</a>
+						</div>
+						<!-- 第三张 -->
+						<div class="mui-slider-item">
+							<a href="javaScrip:;">
+								<img src="image/banner.png">
+							</a>
+						</div>
+						<!-- 第四张 -->
+						<div class="mui-slider-item">
+							<a href="javaScrip:;">
+								<img src="image/banner-2.png">
+							</a>
+						</div>
+						<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="javaScrip:;">
+								<img src="image/banner.png">
+							</a>
+						</div>
+					</div>
+					<div class="mui-slider-indicator">
+						<div class="mui-indicator mui-active"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+					</div>
+				</div>
+
+				<div class="mui-row">
+					<div class="mui-col-sm-4 mui-col-xs-4">
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right">
+								品牌制造商直供
+							</a>
+						</li>
+					</div>
+					<div class="mui-col-sm-4 mui-col-xs-4">
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right">
+								七天免费退换货
+							</a>
+						</li>
+					</div>
+					<div class="mui-col-sm-4 mui-col-xs-4">
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right">
+								线下真实体验
+							</a>
+						</li>
+					</div>
+				</div>
+
+				
+				<p class="dividing-line"></p>
+				
+				<h2 class="straight-title mui-text-center">大牌制造商直供<span class="mui-icon mui-icon-arrowright"></span></h2>
+				<div class="straight-k">
+					<ul class="mui-table-view mui-grid-view">
+						<li class="mui-table-view-cell mui-media mui-col-xs-6">
+							<a href="javaScrip:;" title="知名原创">
+								<img class="mui-media-object" src="image/straight-1.png">
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-6">
+							<a href="javaScrip:;" title="实木家具">
+								<img class="mui-media-object" src="image/straight-2.png">
+							</a>
+							<a href="javaScrip:;" title="MUJI风">
+								<img class="mui-media-object straight-left-bottom" src="image/straight-3.png">
+							</a>
+						</li>
+					</ul>
+				</div>
+					
+
+
+				<p class="dividing-line"></p>
+				
+				<h2 class="straight-title mui-text-center">每周小物<span class="mui-icon mui-icon-arrowright"></span></h2>
+				<ul class="mui-table-view week-list">
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;" title="伴侣小马">
+							<img class="mui-media-object mui-pull-left week-img" src="image/week-1.png">
+							<div class="mui-media-body week-shopname">
+								伴侣小马
+								<p class="mui-ellipsis ">给孩子最好的陪伴</p>
+								<p class="week-price">
+									￥798
+									<span>￥989</span>
+								</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;" title="若隐梳妆凳">
+							<img class="mui-media-object mui-pull-left week-img" src="image/week-2.png">
+							<div class="mui-media-body week-shopname">
+								若隐梳妆凳
+								<p class="mui-ellipsis">木蜡油涂装，安全放心</p>
+								<p class="week-price">
+									￥539
+									<span>￥680</span>
+								</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+
+
+
+				
+				<p class="dividing-line"></p>
+				
+				<h2 class="straight-title mui-text-center">生活家<span class="mui-icon mui-icon-arrowright"></span></h2>
+					
+					<div class="mui-slider">
+				        <div class="mui-slider-group mui-slider-loop">
+				        	<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
+				            <div class="mui-slider-item mui-slider-item-duplicate">
+				                <ul class="mui-table-view mui-grid-view">
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-12">
+				                    	<a href="javaScript:;">
+				                    		<img class="mui-media-object" src="image/life-3.png">
+				                            <div class="mui-media-body mui-row straight-more-shop">
+												<div class="mui-col-xs-3">
+													<img src="image/more-9.png"/>
+												</div>
+												<div class="mui-col-xs-3">
+													<img src="image/more-10.png"/>
+												</div>
+												<div class="mui-col-xs-3">
+													<img src="image/more-11.png"/>
+												</div>
+												<div class="mui-col-xs-3">
+													<img src="image/more-12.png"/>
+												</div>
+				                            </div>
+				                    	</a>
+				                    </li>
+				                </ul>
+				            </div>
+				            
+				            
+				            
+				            
+				            <div class="mui-slider-item mui-slider-item-duplicate">
+				                <ul class="mui-table-view mui-grid-view">
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-12">
+				                    	<a href="javaScript:;">
+				                    		<img class="mui-media-object" src="image/life-1.png">
+				                            <div class="mui-media-body mui-row straight-more-shop">
+												<div class="mui-col-xs-3">
+													<img src="image/more-1.png"/>
+												</div>
+												<div class="mui-col-xs-3">
+													<img src="image/more-2.png"/>
+												</div>
+												<div class="mui-col-xs-3">
+													<img src="image/more-3.png"/>
+												</div>
+												<div class="mui-col-xs-3">
+													<img src="image/more-4.png"/>
+												</div>
+				                            </div>
+				                    	</a>
+				                    </li>
+				                </ul>
+				            </div>
+				            
+				            
+				            <div class="mui-slider-item mui-slider-item-duplicate">
+				                <ul class="mui-table-view mui-grid-view">
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-12">
+				                    	<a href="javaScript:;">
+				                    		<img class="mui-media-object" src="image/life-2.png">
+				                           <div class="mui-media-body mui-row straight-more-shop">
+												<div class="mui-col-xs-3">
+													<img src="image/more-5.png"/>
+												</div>
+												<div class="mui-col-xs-3">
+													<img src="image/more-6.png"/>
+												</div>
+												<div class="mui-col-xs-3">
+													<img src="image/more-7.png"/>
+												</div>
+												<div class="mui-col-xs-3">
+													<img src="image/more-8.png"/>
+												</div>
+				                            </div>
+				                    	</a>
+				                    </li>
+				                </ul>
+				            </div>
+				            
+				            <div class="mui-slider-item mui-slider-item-duplicate">
+				                <ul class="mui-table-view mui-grid-view">
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-12">
+				                    	<a href="javaScript:;">
+				                    		<img class="mui-media-object" src="image/life-3.png">
+				                            <div class="mui-media-body mui-row straight-more-shop">
+												<div class="mui-col-xs-3">
+													<img src="image/more-9.png"/>
+												</div>
+												<div class="mui-col-xs-3">
+													<img src="image/more-10.png"/>
+												</div>
+												<div class="mui-col-xs-3">
+													<img src="image/more-11.png"/>
+												</div>
+												<div class="mui-col-xs-3">
+													<img src="image/more-12.png"/>
+												</div>
+				                            </div>
+				                    	</a>
+				                    </li>
+				                </ul>
+				            </div>
+				            
+				            <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一个图文表格) -->
+				            <div class="mui-slider-item mui-slider-item-duplicate">
+				                <ul class="mui-table-view mui-grid-view">
+				                    <li class="mui-table-view-cell mui-media mui-col-xs-12">
+				                    	<a href="javaScript:;">
+				                    		<img class="mui-media-object" src="image/life-1.png">
+				                            <div class="mui-media-body mui-row straight-more-shop">
+												<div class="mui-col-xs-3">
+													<img src="image/more-1.png"/>
+												</div>
+												<div class="mui-col-xs-3">
+													<img src="image/more-2.png"/>
+												</div>
+												<div class="mui-col-xs-3">
+													<img src="image/more-3.png"/>
+												</div>
+												<div class="mui-col-xs-3">
+													<img src="image/more-4.png"/>
+												</div>
+				                            </div>
+				                    	</a>
+				                    </li>
+				                </ul>
+				            </div>
+				        </div>
+		       
+		    		</div>
+		            
+
+
+
+
+				<p class="dividing-line"></p>
+				
+				<h2 class="straight-title mui-text-center">热销精选</h2>
+				<ul class="mui-table-view mui-grid-view">
+					<li class="mui-table-view-cell mui-media mui-col-xs-6 select-list">
+						<a href="javaScrip:;" title="新主题转角沙发">
+							<img class="mui-media-object" src="image/select-1.png">
+							<div class="mui-media-body select">
+								<h3>新主题转角沙发</h3>
+								<p>意大利知名设计师代表作</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-6 select-list">
+						<a href="javaScrip:;" title="博德真皮沙发">
+							<img class="mui-media-object" src="image/select-2.png">
+							<div class="mui-media-body select">
+								<h3>博德真皮沙发</h3>
+								<p>意大利全青皮 纯鹅绒填充</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-6 select-list">
+						<a href="javaScrip:;" title="桃源真皮大床">
+							<img class="mui-media-object" src="image/select-3.png">
+							<div class="mui-media-body select">
+								<h3>桃源真皮大床</h3>
+								<p>意大利全青皮 触感舒适</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-6 select-list">
+						<a href="javaScrip:;" title="博德大理石餐桌">
+							<img class="mui-media-object" src="image/select-4.png">
+							<div class="mui-media-body select">
+								<h3>博德大理石餐桌</h3>
+								<p>天然大理石面板 独特纹理</p>
+							</div>
+						</a>
+					</li>
+
+					<li class="mui-table-view-cell mui-media mui-col-xs-6 select-list">
+						<a href="javaScrip:;" title="云渺沙发">
+							<img class="mui-media-object" src="image/select-5.png">
+							<div class="mui-media-body select">
+								<h3>云渺沙发</h3>
+								<p>FAS级黑胡桃木，羽绒填充</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-6 select-list">
+						<a href="javaScrip:;" title="静闲大床">
+							<img class="mui-media-object" src="image/select-6.png">
+							<div class="mui-media-body select">
+								<h3>静闲大床</h3>
+								<p>天然棉麻舒适软靠包</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-6 select-list">
+						<a href="javaScrip:;" title="若邻休闲椅">
+							<img class="mui-media-object" src="image/select-7.png">
+							<div class="mui-media-body select">
+								<h3>若邻休闲椅</h3>
+								<p>环抱式设计，坐感超舒适</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-6 select-list">
+						<a href="javaScrip:;" title="景云餐桌">
+							<img class="mui-media-object" src="image/select-8.png">
+							<div class="mui-media-body select">
+								<h3>景云餐桌</h3>
+								<p>FAS级黑胡桃木，纹理雅致</p>
+							</div>
+						</a>
+					</li>
+
+					<li class="mui-table-view-cell mui-media mui-col-xs-6 select-list">
+						<a href="javaScrip:;" title="容下沙发">
+							<img class="mui-media-object" src="image/select-9.png">
+							<div class="mui-media-body select">
+								<h3>容下沙发</h3>
+								<p>羽绒填充，坐感柔软舒适</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-6 select-list">
+						<a href="javaScrip:;" title="悠然双人床">
+							<img class="mui-media-object" src="image/select-10.png">
+							<div class="mui-media-body select">
+								<h3>悠然双人床</h3>
+								<p>FAS级黑胡桃木，坚实稳固</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-6 select-list">
+						<a href="javaScrip:;" title="空白电视柜">
+							<img class="mui-media-object" src="image/select-11.png">
+							<div class="mui-media-body select">
+								<h3>空白电视柜</h3>
+								<p>客厅物品最佳收纳处</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-6 select-list">
+						<a href="javaScrip:;" title="埃文斯储物空间床">
+							<img class="mui-media-object" src="image/select-12.png">
+							<div class="mui-media-body select">
+								<h3>埃文斯储物空间床</h3>
+								<p>北美黄杨木打造 收纳小能手</p>
+							</div>
+						</a>
+					</li>
+
+					<li class="mui-table-view-cell mui-media mui-col-xs-6 select-list">
+						<a href="javaScrip:;" title="阿德莱真皮沙发">
+							<img class="mui-media-object" src="image/select-13.png">
+							<div class="mui-media-body select">
+								<h3>阿德莱真皮沙发</h3>
+								<p>头层牛皮 高回弹海绵坐垫</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-6 select-list">
+						<a href="javaScrip:;" title="Taylor泰勒床">
+							<img class="mui-media-object" src="image/select-14.png">
+							<div class="mui-media-body select">
+								<h3>Taylor泰勒床</h3>
+								<p>北美白蜡木框架 环保耐用</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-6 select-list">
+						<a href="javaScrip:;" title="Taylor泰勒咖啡桌">
+							<img class="mui-media-object" src="image/select-15.png">
+							<div class="mui-media-body select">
+								<h3>Taylor泰勒咖啡桌</h3>
+								<p>大储物空间 木质导轨</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-6 select-list">
+						<a href="javaScrip:;" title="Taylor泰勒电视柜">
+							<img class="mui-media-object" src="image/select-16.png">
+							<div class="mui-media-body select">
+								<h3>Taylor泰勒电视柜</h3>
+								<p>美式田园风格 美观大方</p>
+							</div>
+						</a>
+					</li>
+
+					<li class="mui-table-view-cell mui-media mui-col-xs-6 select-list">
+						<a href="javaScrip:;" title="奥罗拉休闲椅">
+							<img class="mui-media-object" src="image/select-17.png">
+							<div class="mui-media-body select">
+								<h3>奥罗拉休闲椅</h3>
+								<p>高档针织面料 吸湿耐用</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-6 select-list">
+						<a href="javaScrip:;" title="Thorne索恩餐桌">
+							<img class="mui-media-object" src="image/select-18.png">
+							<div class="mui-media-body select">
+								<h3>Thorne索恩餐桌</h3>
+								<p>典雅雕花设计 纯正美式风情</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-6 select-list">
+						<a href="javaScrip:;" title="Mouch蒙克真皮沙发">
+							<img class="mui-media-object" src="image/select-19.png">
+							<div class="mui-media-body select">
+								<h3>Mouch蒙克真皮沙发</h3>
+								<p>精美扶手雕花 质感油蜡皮</p>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-6 select-list">
+						<a href="javaScrip:;" title="Caron卡隆绿皮床">
+							<img class="mui-media-object" src="image/select-20.png">
+							<div class="mui-media-body select">
+								<h3>Caron卡隆绿皮床</h3>
+								<p>复古铆钉 进口油蜡皮</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+
+</body>
+<script type="text/javascript">
+	mui.init()
+//自动轮播
+	var slider = mui("#slider");
+	slider.slider({
+		interval: 3000
+	});
+
+	mui.plusReady(function() {
+
+		var watchPosition = plus.geolocation.watchPosition(function(data) {
+
+			var pos_city = data.address.city;
+			mui('.mui-pull-left')[0].innerHTML = pos_city;
+
+		}, function() {
+			alert('定位失败...')
+		});
+		
+		mui("#head_trolley")[0].addEventListener("tap",function(){
+			mui.openWindow('trolley.html','trolley.html')
+		})
+		mui("#head_set")[0].addEventListener("tap",function(){
+			mui.openWindow('set.html','set.html')
+		})
+		
+		
+		
+		mui(".mui-grid-view").on("tap",'a',function(){
+					
+			var title = this.getAttribute('title');
+			
+			mui.openWindow({
+				url:"shop-part.html",
+				id:"shop-part.html",
+				styles:{
+					top:"0px",
+					bottom:'0px'
+				},
+				extras:{
+					titles:title
+				}
+			})
+		})
+		mui(".week-list").on("tap",'a',function(){
+					
+			var title = this.getAttribute('title');
+			
+			mui.openWindow({
+				url:"shop-part.html",
+				id:"shop-part.html",
+				styles:{
+					top:"0px",
+					bottom:'0px'
+				},
+				extras:{
+					titles:title
+				}
+			})
+		})
+		
+		
+		
+		
+		
+		
+	})
+		
+	function refreshDown() {
+		setTimeout(function() {
+
+			mui('#refreshContainer').pullRefresh().endPulldownToRefresh();
+		}, 1500)
+	}
+
+	function refreshUp() {
+		setTimeout(function() {
+			
+			mui('#refreshContainer').pullRefresh().endPullupToRefresh();
+		}, 1000)
+	}
+	
+	mui.init({
+		pullRefresh: {
+			container: "#refreshContainer",
+			down: {
+				contentdown: "下拉可以刷新",
+				contentover: "释放立即刷新",
+				contentrefresh: "正在刷新...",
+				callback: refreshDown
+			},
+			up: {
+				contentdown: "下拉可以加载",
+				contentover: "释放立即加载",
+				contentrefresh: "正在加载...",
+				callback: refreshUp
+			}
+		}
+	});
+</script>
+</html>

@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link href="css/mui.min.css" rel="stylesheet" />
+	<script src="js/mui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+</head>
+
+<body>
+	
+	<header class="mui-bar mui-bar-nav position mui-row">
+		<div class="mui-input-row mui-search mui-col-xs-10">
+		    <input type="search" class="mui-input-clear" placeholder="搜索品牌/单品/风格">
+		</div>
+		<span class="mui-col-xs-1 icon iconfont icon-gouwuche head-icon mui-text-right" id="head_trolley"></span>
+		<span class="mui-col-xs-1 icon iconfont icon-shezhi head-icon-set mui-text-right" id="head_set"></span>
+	</header>
+	
+	
+	
+	<div class="mui-content mui-row mui-fullscreen">
+		
+		<div class="mui-col-xs-2">
+			<div id="segmentedControls" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-vertical">
+				<a class="mui-control-item mui-active" href="#content1">风格</a>
+				<a class="mui-control-item" href="#content2"><span class="aaa">空间</span></a>
+				<a class="mui-control-item" href="#content3">品类</a>
+			</div>
+		</div>
+		<div id="segmentedControlContents" class="mui-col-xs-10" style="border-left: 1px solid #ededed;">
+			<div id="content1" class="mui-control-content mui-active">
+				<ul class="mui-table-view classify-list">
+					<a href="javaScript:;" title="北欧风格">
+						<li class="mui-table-view-cell"><img src="image/style-ou.png"/></li>
+					</a>
+					<a href="javaScript:;" title="简约美式">
+						<li class="mui-table-view-cell"><img src="image/style-jian.png"/></li>
+					</a>
+					<a href="javaScript:;" title="现代简约">
+						<li class="mui-table-view-cell"><img src="image/style-xian.png"/></li>
+					</a>
+					<a href="javaScript:;" title="日式风格">
+						<li class="mui-table-view-cell"><img src="image/style-ri.png"/></li>
+					</a>
+					<a href="javaScript:;" title="古典欧美">
+						<li class="mui-table-view-cell"><img src="image/style-gu.png"/></li>
+					</a>
+					<a href="javaScript:;" title="新中式风格">
+						<li class="mui-table-view-cell"><img src="image/style-xin.png"/></li>
+					</a>
+					<a href="javaScript:;" title="美式乡村">
+						<li class="mui-table-view-cell"><img src="image/style-mei.png"/></li>
+					</a>
+					<a href="javaScript:;" title="传统实木">
+						<li class="mui-table-view-cell"><img src="image/style-chuan.png"/></li>
+					</a>
+					
+					<a href="javaScript:;" title="黑桃木风格">
+						<li class="mui-table-view-cell"><img src="image/style-hei.png"/></li>
+					</a>
+					<a href="javaScript:;" title="床垫&儿童家具">
+						<li class="mui-table-view-cell"><img src="image/style-chuang.png"/></li>
+					</a>
+					
+					
+					
+				</ul>
+			</div>
+			<div id="content2" class="mui-control-content">
+				<ul class="mui-table-view classify-list">
+					<a href="javaScript:;" title="客厅">
+						<li class="mui-table-view-cell"><img src="image/space-1.png"/></li>
+					</a>
+					<a href="javaScript:;" title="餐厅">
+						<li class="mui-table-view-cell"><img src="image/space-2.png"/></li>
+					</a>
+					<a href="javaScript:;" title="卧室">
+						<li class="mui-table-view-cell"><img src="image/space-3.png"/></li>
+					</a>
+					<a href="javaScript:;" title="书房">
+						<li class="mui-table-view-cell"><img src="image/space-4.png"/></li>
+					</a>
+					<a href="javaScript:;" title="儿童房">
+						<li class="mui-table-view-cell"><img src="image/space-5.png"/></li>
+					</a>
+					<a href="javaScript:;" title="其他">
+						<li class="mui-table-view-cell"><img src="image/space-6.png"/></li>
+					</a>
+					
+					
+				</ul>
+			</div><div id="content3" class="mui-control-content">
+				<ul class="mui-table-view classify-list">
+					<a href="javaScript:;" title="沙发">
+						<li class="mui-table-view-cell"><img src="image/class-sofa.png"/></li>
+					</a>
+					<a href="javaScript:;" title="凳椅">
+						<li class="mui-table-view-cell"><img src="image/class-chair.png"/></li>
+					</a>
+					<a href="javaScript:;" title="桌几">
+						<li class="mui-table-view-cell"><img src="image/class-table.png"/></li>
+					</a>
+					<a href="javaScript:;" title="床">
+						<li class="mui-table-view-cell"><img src="image/class-bed.png"/></li>
+					</a>
+					<a href="javaScript:;" title="柜架">
+						<li class="mui-table-view-cell"><img src="image/class-storage.png"/></li>
+					</a>
+					<a href="javaScript:;" title="灯具">
+						<li class="mui-table-view-cell"><img src="image/class-lamps.png"/></li>
+					</a>
+					<a href="javaScript:;" title="寝具">
+						<li class="mui-table-view-cell"><img src="image/class-bedding.png"/></li>
+					</a>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+</body>
+<script type="text/javascript">
+	mui.init()
+	mui.plusReady(function(){
+		
+		mui("#segmentedControlContents").on("tap",'a',function(){
+			
+			
+			var title = this.getAttribute('title');
+			
+			mui.openWindow({
+				url:"class_style.html",
+				id:"class_style.html",
+				styles:{
+					top:"0px",
+					bottom:'0px'
+				},
+				extras:{
+					titles:title
+				}
+			})
+		})
+		
+		
+		mui("#head_trolley")[0].addEventListener("tap",function(){
+			mui.openWindow('trolley.html','trolley.html')
+		})
+		mui("#head_set")[0].addEventListener("tap",function(){
+			mui.openWindow('set.html','set.html')
+		})
+	})
+		
+</script>
+</html>

@@ -1,0 +1,331 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link href="css/mui.min.css" rel="stylesheet" />
+	<script src="js/mui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+</head>
+
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">个人信息</h1>
+	    <a href="javaScript:;" class="mui-pull-right buyCar-Management message-save" id="save">保存</a>
+	</header>
+	
+	<div class="mui-content">
+		
+	<div class="message-progress">
+		<p>完整度13%</p>
+		<div class="progress-outer">
+			<span class="progress-inner"></span>
+		</div>
+	</div>
+	    
+	<p class="dividing-line-spec">基本信息</p>
+	
+	<ul class="mui-table-view message-list">
+		
+		
+		
+		<a href="#picture">
+			 <li class="mui-table-view-cell message-head">头像 
+		        <span class="mui-badge mui-badge-success">
+		        	<span class="mui-icon mui-icon-arrowright"></span>
+		        </span>
+		        <img id="head_portrait" src="image/head.png" class="head-img"/>
+		    </li>
+		</a>
+		   
+		   
+
+	    <li class="mui-table-view-cell message-name">昵称 
+	        <span class="mui-badge mui-badge-success">
+	        	<input type="text" placeholder="修改昵称" />
+	        </span>
+	        <span class="mui-icon icon iconfont icon-shuxie"></span>
+	    </li>
+	    
+	    <a href="#sex">
+		    <li class="mui-table-view-cell">性别
+		        <span class="mui-badge mui-badge-success" id="sex_change">选择性别
+		        	<span class="mui-icon mui-icon-arrowright"></span>
+		        </span>
+		    </li>
+		</a>
+		
+		<a href="#age">
+			<li class="mui-table-view-cell">年龄段
+		        <span class="mui-badge mui-badge-success" id="age_change">选择年龄段
+		        	<span class="mui-icon mui-icon-arrowright"></span>
+		        </span>
+		    </li>
+		</a>
+		  
+		<a href="#hobby">
+			<li class="mui-table-view-cell">风格喜好
+		        <span class="mui-badge mui-badge-success" id="hobby_change">选择风格喜好
+		        	<span class="mui-icon mui-icon-arrowright"></span>
+		        </span>
+		    </li>
+		</a>
+		    
+	    <li class="mui-table-view-cell message-job">行业
+	        <span class="mui-badge mui-badge-success">
+	        	<input type="text" placeholder="请输入行业" />
+	        </span>
+	        <span class="mui-icon icon iconfont icon-shuxie"></span>
+	    </li>
+	    <li class="mui-table-view-cell">收货地址
+	        <span class="mui-badge mui-badge-success">
+	        	<span class="mui-icon mui-icon-arrowright"></span>
+	        </span>
+	    </li>
+	</ul>
+	
+	<p class="dividing-line-spec">房屋信息</p>
+	
+	<ul class="mui-table-view message-list">
+	    <li class="mui-table-view-cell">所在区域 
+	        <span class="mui-badge mui-badge-success">
+	        	选择楼盘位置
+	        	<span class="mui-icon mui-icon-arrowright"></span>
+	        </span>
+	    </li>
+	    <li class="mui-table-view-cell message-community">楼盘/社区 
+	        <span class="mui-badge mui-badge-success">
+	        	<input type="text" placeholder="请填写楼盘或者社区名称" />
+	        </span>
+	        <span class="mui-icon icon iconfont icon-shuxie"></span>
+	    </li>
+	    
+	    <a href="#buildtype">
+	    	<li class="mui-table-view-cell">户型 
+		        <span class="mui-badge mui-badge-success" id="buildtype_change">
+		        	其他
+		        	<span class="mui-icon mui-icon-arrowright"></span>
+		        </span>
+		    </li>
+	    </a>
+	    
+	    
+	    <li class="mui-table-view-cell">房屋面积 
+	        <span class="mui-badge mui-badge-success">
+	        	选择住宅面积
+	        	<span class="mui-icon mui-icon-arrowright"></span>
+	        </span>
+	    </li>
+	    <li class="mui-table-view-cell">
+	    	<textarea class="message-address" placeholder="填写详细地址（至少五字）"></textarea>
+	    </li>
+	</ul>
+	
+	
+    <p class="dividing-line-spec">认证信息</p>
+    <ul class="mui-table-view message-list">
+	    <li class="mui-table-view-cell">手机号
+	        <span class="mui-badge mui-badge-success">133****3536
+	        </span>
+	    </li>
+	    <li class="mui-table-view-cell">微信账号
+	        <span class="mui-badge mui-badge-success">未绑定
+	        </span>
+	    </li>
+	    <li class="mui-table-view-cell">芝麻信用
+	        <span class="mui-badge mui-badge-success">认证提升预约率
+	        </span>
+	    </li>
+    </ul>
+	
+	
+	</div>
+
+	
+	<div id="picture" class="mui-popover mui-popover-action mui-popover-bottom">
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell" id="photo">
+				<a href="#">拍照</a>
+			</li>
+			<li class="mui-table-view-cell" id="album">
+				<a href="#">从手机相册选择</a>
+			</li>
+		</ul>
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell">
+				<a href="#picture"><b>取消</b></a>
+			</li>
+		</ul>
+	</div>
+	
+	<div id="sex" class="mui-popover mui-popover-action mui-popover-bottom">
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell">
+				<a href="#" id="sex_boy">男</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a href="#" id="sex_girl">女</a>
+			</li>
+		</ul>
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell">
+				<a href="#picture"><b>取消</b></a>
+			</li>
+		</ul>
+	</div>
+	
+	<div id="age" class="mui-popover mui-popover-action mui-popover-bottom">
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell">
+				<a href="#" id="age_one">10-20</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a href="#" id="age_two">20-40</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a href="#" id="age_three">40-60</a>
+			</li>
+		</ul>
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell">
+				<a href="#picture"><b>取消</b></a>
+			</li>
+		</ul>
+	</div>
+	
+	<div id="hobby" class="mui-popover mui-popover-action mui-popover-bottom">
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell">
+				<a href="#" id="hobby_one">现代风格</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a href="#" id="hobby_two">新中式风格</a>
+			</li>
+		</ul>
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell">
+				<a href="#picture"><b>取消</b></a>
+			</li>
+		</ul>
+	</div>
+	
+	<div id="buildtype" class="mui-popover mui-popover-action mui-popover-bottom">
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell">
+				<a href="#" id="type_one">一室一厅</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a href="#" id="type_two">两室一厅</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a href="#" id="type_three">两室两厅</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a href="#" id="type_four">三室两厅</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a href="#" id="type_fire">四室两厅</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a href="#" id="type_other">其他</a>
+			</li>
+		</ul>
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell">
+				<a href="#picture"><b>取消</b></a>
+			</li>
+		</ul>
+	</div>
+
+
+</body>
+<script type="text/javascript">
+	mui.init({
+		swipeBack: true
+	});
+	
+	mui.plusReady(function(){
+		
+		mui('body').on('tap', '.mui-popover-action li>a', function() {
+			var a = this,
+				parent;
+			for (parent = a.parentNode; parent != document.body; parent = parent.parentNode) {
+				if (parent.classList.contains('mui-popover-action')) {
+					break;
+				}
+			}
+			mui('#' + parent.id).popover('toggle');
+		})
+		
+		mui("#age_one")[0].addEventListener("tap",function(){
+			mui("#age_change")[0].innerHTML = "10-20" + '<span class="mui-icon mui-icon-arrowright"></span>';
+		})
+		mui("#age_two")[0].addEventListener("tap",function(){
+			mui("#age_change")[0].innerHTML = "20-40" + '<span class="mui-icon mui-icon-arrowright"></span>';
+		})
+		mui("#age_three")[0].addEventListener("tap",function(){
+			mui("#age_change")[0].innerHTML = "40-60" + '<span class="mui-icon mui-icon-arrowright"></span>';
+		})
+		mui("#sex_boy")[0].addEventListener("tap",function(){
+			mui("#sex_change")[0].innerHTML = "男" + '<span class="mui-icon mui-icon-arrowright"></span>';
+		})
+		mui("#sex_girl")[0].addEventListener("tap",function(){
+			mui("#sex_change")[0].innerHTML = "女" + '<span class="mui-icon mui-icon-arrowright"></span>';
+		})
+		mui("#hobby_one")[0].addEventListener("tap",function(){
+			mui("#hobby_change")[0].innerHTML = "现代风格" + '<span class="mui-icon mui-icon-arrowright"></span>';
+		})
+		mui("#hobby_two")[0].addEventListener("tap",function(){
+			mui("#hobby_change")[0].innerHTML = "新中式风格" + '<span class="mui-icon mui-icon-arrowright"></span>';
+		})
+		mui("#type_one")[0].addEventListener("tap",function(){
+			mui("#buildtype_change")[0].innerHTML = "一室一厅" + '<span class="mui-icon mui-icon-arrowright"></span>';
+		})
+		mui("#type_two")[0].addEventListener("tap",function(){
+			mui("#buildtype_change")[0].innerHTML = "两室一厅" + '<span class="mui-icon mui-icon-arrowright"></span>';
+		})
+		mui("#type_three")[0].addEventListener("tap",function(){
+			mui("#buildtype_change")[0].innerHTML = "两室两厅" + '<span class="mui-icon mui-icon-arrowright"></span>';
+		})
+		mui("#type_four")[0].addEventListener("tap",function(){
+			mui("#buildtype_change")[0].innerHTML = "三室两厅" + '<span class="mui-icon mui-icon-arrowright"></span>';
+		})
+		mui("#type_fire")[0].addEventListener("tap",function(){
+			mui("#buildtype_change")[0].innerHTML = "四室两厅" + '<span class="mui-icon mui-icon-arrowright"></span>';
+		})
+		mui("#type_other")[0].addEventListener("tap",function(){
+			mui("#buildtype_change")[0].innerHTML = "其他" + '<span class="mui-icon mui-icon-arrowright"></span>';
+		})
+		
+		
+		mui("#save")[0].addEventListener("tap",function(){
+			mui.toast('保存失败');
+		})
+		
+		
+		mui("#photo")[0].addEventListener("tap",function(){
+			var photo = plus.camera.getCamera( 1 );
+			photo.captureImage(function(path){
+				
+				mui("#head_portrait")[0].src = "file://"+plus.io.convertLocalFileSystemURL(path);
+				
+			});
+			
+		})
+		
+		mui("#album")[0].addEventListener("tap",function(){
+			plus.gallery.pick(function(data){
+				mui("#head_portrait")[0].src = "file://"+plus.io.convertLocalFileSystemURL(data);
+			});
+		})
+		
+	})
+
+	
+		
+</script>
+</html>
